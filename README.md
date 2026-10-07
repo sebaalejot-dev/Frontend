@@ -1,31 +1,19 @@
-# Sistema de Gestión Académica — UNAB
+# React + Vite
 
-Proyecto de curso: sistema web para gestión académica (secciones, oferta académica, inscripciones).
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Porgama a usar
-- React + Vite
-- React Router DOM
-- Tailwind CSS
+Currently, two official plugins are available:
 
-## Instalación
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-\```bash
-npm install
-\```
+## React Compiler
 
-## Ejecución
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-\```bash
-npm run dev
-\```
+Note: This will impact Vite dev & build performances.
+You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
 
+## Expanding the Oxlint configuration
 
-## Estructura del proyecto
-
-- `src/components/` — componentes reutilizables
-- `src/pages/` — páginas de la aplicación
-
-## Funcionalidades implementadas
-
-- Creación de secciones académicas (Desde una cuenta Docente)
-- Consulta de secciones propias por docente, con nómina de estudiantes (mock)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
